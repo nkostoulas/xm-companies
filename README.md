@@ -54,9 +54,9 @@ A JWT token signed by the application secret must be used, e.g. using jwt.io.
   Request Body:
   ```json
   {
-    "name": "Example Company",
-    "description": "Sample description",
-    "num_employees": 50,
+    "name": "XM",
+    "description": "XM does trading",
+    "num_employees": 200,
     "is_registered": true,
     "type": "Corporation"
   }
@@ -74,7 +74,7 @@ A JWT token signed by the application secret must be used, e.g. using jwt.io.
   Request Body:
   ```json
   {
-    "name": "Updated Name"
+    "name": "XM trading"
   }
   ```
 
@@ -110,4 +110,4 @@ The application is containerized. Deploy it using Docker Compose in production.
 - integration tests
 - proper secrets management for jwt authentication
 - proper secrets management for database access
-- add authentication to Kafka
+- authentication for Kafka
