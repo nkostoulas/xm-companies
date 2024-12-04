@@ -1,0 +1,8 @@
+api:
+  event_topic: "companies.events.v1"
+jwt:
+  secret: "my_secret"
+kafka:
+  brokers: "localhost:9092"
+database:
+  connection: "postgres://user:password@localhost:5432/companies?sslmode=disable"
