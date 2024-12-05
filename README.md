@@ -106,9 +106,8 @@ go test ./...
 The application is containerized. Deploy it using Docker Compose in production.
 
 ## Future Improvements
-- add unit tests
-- add integration tests
-- secrets management for jwt authentication
-- secrets management for database access
-- authentication for Kafka
-- use protos for API and event streaming
+- add unit tests and integration tests
+- secrets management (e.g. using Hashicorp Vault) for JWT authentication and database access
+- authenticated access to Kafka; also Kafka Topic and ACL management
+- guarantee at least once delivery of Kafka events
+- autogenerate API docs from Go structs (or switch to protos)
