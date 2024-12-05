@@ -35,7 +35,7 @@ services:
     environment:
       - DB_URL=postgres://user:password@db:5432/companies?sslmode=disable
     volumes:
-      - ./migrations:/migrations
+      - ./infrastructure/migrations:/migrations
     depends_on:
       db:
         condition: service_healthy

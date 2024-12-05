@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	companiesdb "xm-companies/pkg/db"
+	companiesdb "xm-companies/internal/db"
 	"xm-companies/pkg/kafka"
 )
 

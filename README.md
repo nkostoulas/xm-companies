@@ -85,7 +85,7 @@ A JWT token signed by the application secret must be used, e.g. using jwt.io.
 
 ## Kafka Integration
 Connect via the Kafka API:
-- Topic: `company.events.v1`
+- Topic: `companies.events.v1`
 - Broker: `localhost:9092`
 
 ## Development
@@ -106,8 +106,9 @@ go test ./...
 The application is containerized. Deploy it using Docker Compose in production.
 
 ## Future Improvements
-- unit tests
-- integration tests
-- proper secrets management for jwt authentication
-- proper secrets management for database access
+- add unit tests
+- add integration tests
+- secrets management for jwt authentication
+- secrets management for database access
 - authentication for Kafka
+- use protos for API and event streaming
